@@ -1,0 +1,143 @@
+﻿
+@{
+    ViewData["Title"] = "Tours";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*
+@functions{public string YemekGetir(int id)
+    {
+        <div class="d-flex align-self-stretch">
+
+             @foreach (var item in Model.Turlar) 
+        {
+                @if (item.TurId == id)
+                {
+                    <div class="col-md-4 ftco-animate">
+                        <div class="blog-entry">
+                            <img src="@item.Yemek.Fotograf" class="d-block" style="width: 100%; height: 350px;">
+                            <div class="text pt-3 pb-4 px-4">
+                                <div class="meta">
+                                </div>
+                                <h3 class="heading"><a href="#">@item.Yemek.YemekAdi</a></h3>
+                                <p class="clearfix">
+                                    <a href="#" class="float-left meta-chat">Puan: @item.Yemek.Puan</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+        }
+        
+        </div>
+        return string.Empty;
+    }
+
+
+}
+*@
+<section class="hero-wrap hero-wrap-2">
+    <img style="z-index:-1; position: absolute;" src="~/images/genel/bg_3.jpg" class="d-block w-100 h-auto" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+            <div class="col-md-9 ftco-animate text-center mb-4">
+                <h1 class="mb-2 bread">@Localizer["Tours1"]</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="/Home/Index">@Localizer["Anasayfa"] <i class="ion-ios-arrow-forward"></i></a></span> <span><a href="/Home/Tarifler">@Localizer["Tarifler"] </a><i class="ion-ios-arrow-forward"></i></span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-section bg-light">
+
+    <div class="container">
+
+        <div class="row ftco-search">
+            <div class="col-md-12 nav-link-wrap">
+                <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">@Localizer["Hepsi"]</a>
+
+                    <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">@Localizer["Kahvaltı"]</a>
+
+                    <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">@Localizer["Öğle"]</a>
+
+                    <a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">@Localizer["Akşam"]</a>
+
+                    <a class="nav-link ftco-animate" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false">@Localizer["Tatlı"]</a>
+
+                    <a class="nav-link ftco-animate" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6" role="tab" aria-controls="v-pills-6" aria-selected="false">@Localizer["İçecek"]</a>
+
+                </div>
+            </div>
+            <div class="col-md-12">
+
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-day-1-tab">
+                        @*
+                        @foreach (var item in Model.Yemek)
+                        {
+                            
+                            <div class=" ftco-animate" style="width: 100%;">
+                                <div class="col-md-4 blog-entry" style="width: 50%; height: 500px; float: left;">
+                                    <img src="@item.Fotograf" class="d-block" style="width: 100%; height: 70%;">
+                                    <div class="text pt-3 pb-4 px-4">
+                                        <div class="meta">
+                                        </div>
+                                        <h3 class="heading"><a href="#">@item.YemekAdi</a></h3>
+                                        <p style="color:white"></p>
+                                        <p class="clearfix">
+                                            <a href="#" class="float-left meta-chat">Puan: @item.Puan</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 blog-entry" style="margin-left: 35%; height: 500px; width: 100%;">
+                                    <b>Malzemeler:</b>
+                                    @foreach (var item2 in Model.YemekMalzeme)
+                                    {
+                                        if (item2.YemekId == item.Id)
+                                        {
+                                            @item2.Malzeme.Miktar @:&nbsp; @item2.Malzeme.MiktarTur  &nbsp; @item2.Malzeme.Adi, &nbsp;
+                                        }
+                                    }
+                                    <br /><b>Tarif:</b> @item.Tarif
+                                </div>
+                            </div>
+
+                        }
+                    </div>
+                    <div class="tab-pane fade " id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
+                        @YemekGetir(2)
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
+                        @YemekGetir(3)
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-day-4-tab">
+                        @YemekGetir(4)
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-day-5-tab">
+                        @YemekGetir(5)
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-day-6-tab">
+                        @YemekGetir(6)
+                    </div>
+                    *@
+                    @*<div class="row no-gutters my-5">
+                            <div class="col text-center">
+                                <div class="block-27">
+                                    <ul>
+                                        <li><a href="#">&lt;</a></li>
+                                        <li class="active"><span>1</span></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">&gt;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>*@
+                    </div></div>
+</section>
+
+

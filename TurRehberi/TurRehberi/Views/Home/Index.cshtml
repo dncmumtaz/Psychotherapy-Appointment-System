@@ -1,8 +1,54 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@{ ViewData["Title"] = "Home Page"; }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <section class="home-slider owl-carousel js-fullheight">
+        <div class="slider-item js-fullheight">
+            <img style="z-index:-1; position: absolute;" src="~/images/genel/bg_1.jpg" class="d-block w-100 h-100">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center" data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Tours</span>
+                        <h1 class="mb-4">@Localizer["İcerik"]</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item js-fullheight">
+            <img style="z-index:-1; position: absolute;" src="~/images/genel/bg_2.jpg" class="d-block w-100 h-100">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center" data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Tours</span>
+                        <h1 class="mb-4">@Localizer["İcerik2"]</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item js-fullheight">
+            <img style="z-index:-1; position: absolute;" src="~/images/genel/bg_3.jpg" class="d-block w-100 h-100">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Tours</span>
+                        <h1 class="mb-4">@Localizer["İcerik3"]</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

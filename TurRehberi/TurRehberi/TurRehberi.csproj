@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Migrations\" />
+    <Folder Include="wwwroot\images\tur\" />
   </ItemGroup>
 
 </Project>
