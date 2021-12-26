@@ -117,25 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Hepsi" xml:space="preserve">
-    <value>Hepsi</value>
+  <data name="Content" xml:space="preserve">
+    <value>En iyi tur sitesi</value>
   </data>
-  <data name="Kış" xml:space="preserve">
-    <value>Kış</value>
-  </data>
-  <data name="Sonbahar" xml:space="preserve">
-    <value>Sonbahar</value>
-  </data>
-  <data name="Tours" xml:space="preserve">
-    <value>Turlar</value>
-  </data>
-  <data name="Tours1" xml:space="preserve">
-    <value>Turlar</value>
-  </data>
-  <data name="Yaz" xml:space="preserve">
-    <value>Yaz</value>
-  </data>
-  <data name="İlkbahar" xml:space="preserve">
-    <value>İlkbahar</value>
+  <data name="Content2" xml:space="preserve">
+    <value>Ölmeden görmeniz gereken yerler</value>
   </data>
 </root>

@@ -132,9 +132,6 @@
   <data name="Ingilizce" xml:space="preserve">
     <value>İngilizce</value>
   </data>
-  <data name="Malzeme" xml:space="preserve">
-    <value>Malzeme</value>
-  </data>
   <data name="siteDili" xml:space="preserve">
     <value>?culture=tr-TR</value>
   </data>
@@ -142,19 +139,10 @@
     <value>Turlar</value>
   </data>
   <data name="Tur" xml:space="preserve">
-    <value>Tür</value>
+    <value>Tur</value>
   </data>
   <data name="Turkce" xml:space="preserve">
     <value>Türkçe</value>
-  </data>
-  <data name="Yemek" xml:space="preserve">
-    <value>Yemek</value>
-  </data>
-  <data name="YemekMalzeme" xml:space="preserve">
-    <value>YemekMalzeme</value>
-  </data>
-  <data name="YemekTur" xml:space="preserve">
-    <value>YemekTur</value>
   </data>
   <data name="İletişim" xml:space="preserve">
     <value>İletişim</value>

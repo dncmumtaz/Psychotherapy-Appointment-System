@@ -1,4 +1,10 @@
-﻿@using Microsoft.AspNetCore.Identity
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@using Microsoft.AspNetCore.Identity
 @inject SignInManager<User> SignInManager
 @inject UserManager<User> UserManager
 <!DOCTYPE html>
@@ -31,42 +37,50 @@
 
 </head>
 <body>
+    <div style="background-color: #0F0D0C">
+        <br /><br /><br /><br />
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">Tours</a>
+            <a class="navbar-brand" href="~/feliciano-master/index.html">Tours</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="/Home/Index/@Localizer["siteDili"]" class="nav-link">@Localizer["Anasayfa"]</a></li>
-                    <li class="nav-item"><a href="/Home/About/@Localizer["siteDili"]" class="nav-link">@Localizer["About"]</a></li>
-                    <li class="nav-item"><a href="/Home/Tours/@Localizer["siteDili"]" class="nav-link">@Localizer["Tours"]</a></li>
+                    <li class="nav-item active"><a href="/Home/Index" class="nav-link">Anasayfa</a></li>
+                    <li class="nav-item"><a href="/Home/About" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="/Home/Tours" class="nav-link">Tours</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            @Localizer["Dil"]
+                            Dil
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                            <a class="dropdown-item" href="?culture=tr-TR">@Localizer["Turkce"]</a>
-                            <a class="dropdown-item" href="?culture=en-US">@Localizer["Ingilizce"]</a>
+                            <a class="dropdown-item" href="?culture=tr-TR">Türkçe</a>
+                            <a class="dropdown-item" href="?culture=en-US">İngilizce</a>
 
                         </div>
                     </li>
                     @if (SignInManager.IsSignedIn(User))
                     {
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Admin
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                            <a class="dropdown-item" asp-area="" asp-controller="Tur" asp-action="Index">@Localizer["Tur"]</a>
-                            
-                        </div>
-                    </li>
-                    }
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Admin
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" asp-area="" asp-controller="Tur" asp-action="Index">Tur</a>
+
+            </div>
+        </li>}
+
                 </ul>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial" />
                 </div>
             </div>
+
+
         </div>
     </nav>
     <div>
@@ -82,12 +96,12 @@
                 <div class="col-md-6 col-lg-6">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Tours</h2>
-                        <p>@Localizer["AnasayfaYazı"]</p>
+                        <p>En çılgın turlara en önde koşmak için takipte kal.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">@Localizer["İletişim"]</h2>
+                        <h2 class="ftco-heading-2">İletişim</h2>
                         <ul class="list-unstyled open-hours">
                             <li class="d-flex"><span>Twitter: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @@turrehberi</span></li>
                             <li class="d-flex"><span>İnstagram: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @@turrehberi</span></li>
@@ -138,3 +152,4 @@
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+
