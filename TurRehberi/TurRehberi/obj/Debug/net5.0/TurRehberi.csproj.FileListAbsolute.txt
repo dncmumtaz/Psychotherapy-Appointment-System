@@ -764,3 +764,6 @@ C:\Users\tgypk\Desktop\OKUL\WEB PROGRAMLAMA\TurRehberi\TurRehberi\TurRehberi\obj
 C:\Users\tgypk\Desktop\OKUL\WEB PROGRAMLAMA\TurRehberi\TurRehberi\TurRehberi\obj\Debug\net5.0\TurRehberi.pdb
 C:\Users\tgypk\Desktop\OKUL\WEB PROGRAMLAMA\TurRehberi\TurRehberi\TurRehberi\obj\Debug\net5.0\TurRehberi.genruntimeconfig.cache
 C:\Users\tgypk\Desktop\OKUL\WEB PROGRAMLAMA\TurRehberi\TurRehberi\TurRehberi\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\tgypk\Desktop\OKUL\WEB PROGRAMLAMA\TurRehberi\TurRehberi\TurRehberi\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\tgypk\Desktop\OKUL\WEB PROGRAMLAMA\TurRehberi\TurRehberi\TurRehberi\obj\Debug\net5.0\TurRehberi.Resources.Views.Home.About.en-US.resources
+C:\Users\tgypk\Desktop\OKUL\WEB PROGRAMLAMA\TurRehberi\TurRehberi\TurRehberi\obj\Debug\net5.0\TurRehberi.Resources.Views.Home.About.tr-TR.resources
