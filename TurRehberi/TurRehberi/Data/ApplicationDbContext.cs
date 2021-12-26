@@ -12,7 +12,9 @@ namespace TurRehberi.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
-        }
 
+        }
+        public DbSet<Tur> Tur { get; set; }
     }
+
 }
