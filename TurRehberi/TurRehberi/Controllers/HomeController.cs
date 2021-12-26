@@ -39,8 +39,6 @@ namespace TurRehberi.Controllers
 
         public IActionResult Contact()
         {
-            //ViewData["Message"] = _localizer["Message"];
-            ViewData["Message"] = _localizer.GetString("Message");
             return View();
         }
 
